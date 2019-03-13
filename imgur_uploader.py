@@ -21,7 +21,7 @@ def upload_gif(gif):
 
     response = client.upload_from_path(gif)
 
-    click.echo('File uploaded - see your gif at {}'.format(response['link']))
+    click.echo('{}'.format(response['link']))
 
 if __name__ == '__main__':
     upload_gif()
