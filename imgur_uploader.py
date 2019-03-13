@@ -17,7 +17,7 @@ def upload_gif(gif):
 
     client = ImgurClient(client_id, client_secret)
 
-    click.echo('Uploading file {}'.format(click.format_filename(gif)))
+    #click.echo('Uploading file {}'.format(click.format_filename(gif)))
 
     response = client.upload_from_path(gif)
 
